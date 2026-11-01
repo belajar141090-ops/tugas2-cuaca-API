@@ -84,34 +84,31 @@ onMounted(() => {
 
 h2 {
   text-align: center;
-  color: #333;
+  color: var(--ion-text-color);
 }
 
 p {
   text-align: center;
-  color: #666;
+  color: var(--ion-color-step-600, #666);
   margin-bottom: 20px;
 }
 
 .weather-table {
   width: 100%;
   border-collapse: collapse;
-  background: #fff;
+  background: var(--ion-card-background, var(--ion-background-color));
+  color: var(--ion-text-color);
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .weather-table th, .weather-table td {
-  border: 1px solid #ddd;
+  border: 1px solid var(--ion-border-color, #ddd);
   padding: 12px;
   text-align: center;
 }
 
 .weather-table th {
-  background-color: #3880ff;
-  color: white;
-}
-
-.weather-table tr:nth-child(even) {
-  background-color: #f9f9f9;
+  background-color: var(--ion-color-primary, #3880ff);
+  color: var(--ion-color-primary-contrast, #fff);
 }
 </style>
